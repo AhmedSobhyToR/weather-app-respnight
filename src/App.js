@@ -6,9 +6,9 @@ function App() {
 
   return (
     <>
-        <BrowserRouter>
+        <BrowserRouter basename="/donuts-store">
         <Routes>
-          <Route path='/menu' element={<Menu></Menu>} ></Route>
+          <Route path='/' element={<Menu></Menu>} ></Route>
           <Route path='/cart' element={<Cart></Cart>} /> 
   
         </Routes>
