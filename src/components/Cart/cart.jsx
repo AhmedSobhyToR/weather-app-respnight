@@ -110,7 +110,7 @@ const Cart = () => {
                 </div>
                 <div className="cart-btns">
                     <input type="button" value="Pay" onClick={handlePayClick} />
-                    <Link to="/menu"><input type="button" value="Back To Menu" /></Link> 
+                    <Link to="/"><input type="button" value="Back To Menu" /></Link> 
                 </div>
             </div>
         </div>
