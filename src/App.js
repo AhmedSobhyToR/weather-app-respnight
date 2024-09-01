@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-        <BrowserRouter basename="/weather-app">
+        <BrowserRouter basename="/weather-app-night">
         <Routes>
           <Route path='/' element={<Weathercard></Weathercard>} ></Route>
 
