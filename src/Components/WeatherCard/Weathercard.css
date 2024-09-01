@@ -1,0 +1,102 @@
+.weather{
+    display: flex;
+     place-self: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4),  rgba(116, 1, 1, 0.397),  rgba(206, 0, 0, 0.721));
+    width: 350px;
+    border-radius: 0.7rem;
+    height: 660px;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.search-bar input{
+    padding: 0.6rem;
+    padding-left: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.7rem;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3),  rgba(116, 1, 1, 0.397),  rgba(206, 0, 0, 0.721));
+    color: white;
+    width: 70%;
+    font-size: 1rem;
+    
+}
+
+.search-bar button{
+    padding: 1rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3),  rgba(116, 1, 1, 0.397),  rgba(206, 0, 0, 0.621));
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.weather-state{
+    margin: 1rem;
+}
+.weather-state img{
+    width: 130px;
+}
+.temperature{
+    margin: 1rem;
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+}
+.humidity , .wind{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  
+}
+
+.humidity img, .wind img{
+    width: 30px;
+    margin:  0.5rem;
+}
+.city-not-found{
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 60%;
+}
+.degree span{
+    font-size: 1.1rem;
+}
+/* Weather Forecast */
+.weather-forecast{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 1.1rem;
+    color: white;
+  
+}
+.weather-forecast ul{
+    list-style-type: none;
+}
+.weather-forecast ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.weather-forecast .forecast-temp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weather-forecast .forecast-temp img{
+    width: 40px;
+    margin-right: 0.2rem;
+    
+   
+}

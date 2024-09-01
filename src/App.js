@@ -1,16 +1,13 @@
 import './App.css';
-import Menu from './components/Menu/menu';
-import Cart from './components/Cart/cart';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Components/Home/Home';
 function App() {
 
   return (
     <>
-        <BrowserRouter basename="/donuts-store">
+        <BrowserRouter basename="/weather-app">
         <Routes>
-          <Route path='/' element={<Menu></Menu>} ></Route>
-          <Route path='/cart' element={<Cart></Cart>} /> 
-  
+          <Route path='/' element={<Home></Home>} ></Route>
         </Routes>
        
         </BrowserRouter>
