@@ -1,0 +1,30 @@
+.day-forecast{
+    width: 300px;
+    height: 130px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 0.7rem;
+}
+.day-hour-forecast,  .day-icon-forecast .day-degree-forecast , .day-chart-forecast{
+    margin-bottom: 0.3rem;
+}
+.day-chart-forecast{
+   overflow: hidden;
+}
+.day-hour-forecast ul, .day-icon-forecast ul, .day-degree-forecast ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.704);
+}
+.day-icon-forecast img{
+    width: 30px;
+}
+.day-degree-forecast ul li{
+    color: white;
+}
+
+

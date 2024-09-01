@@ -1,9 +1,14 @@
+.home-page{
+    background-image: linear-gradient(to right, rgba(221, 221, 221, 0.477),   rgba(83, 175, 251, 0.759),  rgba(31, 114, 182, 0.759));
+    min-height: 100vh;
+    display: grid;
+}
 .weather{
     display: flex;
      place-self: center;
     flex-direction: column;
     flex-wrap: wrap;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4),  rgba(116, 1, 1, 0.397),  rgba(206, 0, 0, 0.721));
+    background-image: linear-gradient(to right, rgba(221, 221, 221, 0.477),   rgba(83, 175, 251, 0.759),  rgba(31, 114, 182, 0.759));
     width: 350px;
     border-radius: 0.7rem;
     height: 660px;
@@ -17,7 +22,7 @@
     border: none;
     outline: none;
     border-radius: 0.7rem;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3),  rgba(116, 1, 1, 0.397),  rgba(206, 0, 0, 0.721));
+    background-image: linear-gradient(to right, rgba(221, 221, 221, 0.477),   rgba(83, 175, 251, 0.759),  rgba(31, 114, 182, 0.759));
     color: white;
     width: 70%;
     font-size: 1rem;
@@ -28,18 +33,26 @@
     padding: 1rem;
     border-radius: 25px;
     margin-left: 1rem;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3),  rgba(116, 1, 1, 0.397),  rgba(206, 0, 0, 0.621));
+    background-image: linear-gradient(to right, rgba(221, 221, 221, 0.477),   rgba(83, 175, 251, 0.759),  rgba(31, 114, 182, 0.759));
     border: none;
     cursor: pointer;
     color: white;
 }
+.weather-data{
+    display: flex;
+    align-items: center;
+    max-height: 150px;
+    
+}
 .weather-state{
+    color: white;
     margin: 1rem;
 }
 .weather-state img{
-    width: 130px;
+    width: 60px;
 }
 .temperature{
+
     margin: 1rem;
     color: white;
 }
@@ -97,6 +110,8 @@
 .weather-forecast .forecast-temp img{
     width: 40px;
     margin-right: 0.2rem;
-    
-   
+}
+
+.day-forecast{
+    margin: 0.2rem 0;
 }
