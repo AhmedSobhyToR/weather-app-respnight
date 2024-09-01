@@ -1,16 +1,19 @@
 .day-forecast{
-    width: 300px;
-    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 99%;
+    height: 140px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 0.7rem;
 }
 .day-hour-forecast,  .day-icon-forecast .day-degree-forecast , .day-chart-forecast{
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
 }
-.day-chart-forecast{
-   overflow: hidden;
-}
+
+
+
 .day-hour-forecast ul, .day-icon-forecast ul, .day-degree-forecast ul{
     display: flex;
     justify-content: space-around;
@@ -23,8 +26,13 @@
 .day-icon-forecast img{
     width: 30px;
 }
+.day-hour-forecast ul li{
+  font-size: 1.1rem;
+}
 .day-degree-forecast ul li{
     color: white;
+    font-size: 1.1rem;
 }
+
 
 

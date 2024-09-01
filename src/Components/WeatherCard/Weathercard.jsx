@@ -121,6 +121,7 @@ const Weathercard = () => {
                 const data = await response.json();
                 const morningnight = new Date(data.list[0].dt_txt);
                 const timezone = morningnight.getHours();
+                // Night Mode
                 if(timezone >= 18){
                     setBackGround(1);
                 }
@@ -129,23 +130,23 @@ const Weathercard = () => {
                 }
                
                 setForecastData([
-                    {temp_min:Math.floor(data.list[0].main.temp_min), temp_max: Math.floor(data.list[0].main.temp_max),
+                    {temp_min:Math.floor(data.list[0].main.temp_min), temp_max: Math.ceil(data.list[0].main.temp_max),
                         forecastTemp: all_icons[data.list[0].weather[0].icon],description: data.list[0].weather[0].main,
                     day:"Today"},
 
-                    {temp_min:Math.floor(data.list[8].main.temp_min), temp_max: Math.floor(data.list[8].main.temp_max),
+                    {temp_min:Math.floor(data.list[8].main.temp_min), temp_max: Math.ceil(data.list[8].main.temp_max),
                         forecastTemp: all_icons[data.list[8].weather[0].icon],description: data.list[8].weather[0].main,
                     day:"Tomorrow"},
 
-                    {temp_min:Math.floor(data.list[16].main.temp_min), temp_max: Math.floor(data.list[16].main.temp_max),
+                    {temp_min:Math.floor(data.list[16].main.temp_min), temp_max: Math.ceil(data.list[16].main.temp_max),
                         forecastTemp: all_icons[data.list[16].weather[0].icon], description: data.list[16].weather[0].main,
                     day:getDayOfWeek(data.list[16].dt_txt)},
 
-                    {temp_min:Math.floor(data.list[24].main.temp_min), temp_max: Math.floor(data.list[24].main.temp_max),
+                    {temp_min:Math.floor(data.list[24].main.temp_min), temp_max: Math.ceil(data.list[24].main.temp_max),
                         forecastTemp: all_icons[data.list[24].weather[0].icon],description: data.list[24].weather[0].main,
                     day:getDayOfWeek(data.list[24].dt_txt)},
 
-                    {temp_min:Math.floor(data.list[32].main.temp_min), temp_max: Math.floor(data.list[32].main.temp_max),
+                    {temp_min:Math.floor(data.list[32].main.temp_min), temp_max: Math.ceil(data.list[32].main.temp_max),
                         forecastTemp: all_icons[data.list[32].weather[0].icon],description: data.list[32].weather[0].main,
                     day:getDayOfWeek(data.list[32].dt_txt)}
                 ])
@@ -244,12 +245,11 @@ const Weathercard = () => {
                 <h1 className="degree">{weatherData.degree}&deg; C </h1>
                 <span>{weatherData.description}</span>
             </div>
+
             <div className="temperature">
              
                 <h1 className="ciy">{weatherData.city}</h1>
             </div>
-            </div>
-
             <div className="footer">
                 <div className="humidity">
                     <img src={humidity} alt="" />
@@ -267,6 +267,10 @@ const Weathercard = () => {
                     </div>
                 </div>
             </div>
+
+            </div>
+
+
             <Dayforecast filteredHours = {filteredHours} filteredIconHours = {filteredIconHours} 
             filteredDegreeHours = {filteredDegreeHours} backGround= {backGround}>
 

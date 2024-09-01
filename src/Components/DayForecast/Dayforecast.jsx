@@ -20,11 +20,20 @@ const Dayforecast = (props) => {
             pointBackgroundColor: "white", 
             pointBorderWidth: 2, 
             pointRadius: 5, 
-            borderWidth: 2 
+            borderWidth: 2,
           }
         ],
       };
       const options = {
+        layout: {
+          padding: {
+            left: 0,  // 20 pixels padding on the left
+            right: 0, // 20 pixels padding on the right
+            top: 0,   // 10 pixels padding on the top
+            bottom: 0 // 10 pixels padding on the bottom
+          }
+        },
+        maintainAspectRatio: false, // Disable to allow full control over the container size
         plugins: {
           legend: {
             display: false, 
@@ -50,7 +59,7 @@ const Dayforecast = (props) => {
             radius: 0, 
           }
         }
-    }
+      };
 
     return (
   
