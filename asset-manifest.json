@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/weather-app-respnight/static/css/main.6b6e5bd0.css",
+    "main.js": "/weather-app-respnight/static/js/main.5e30fa9a.js",
+    "static/media/cloud.png": "/weather-app-respnight/static/media/cloud.20f353f873a9b27949a9.png",
+    "index.html": "/weather-app-respnight/index.html",
+    "main.6b6e5bd0.css.map": "/weather-app-respnight/static/css/main.6b6e5bd0.css.map",
+    "main.5e30fa9a.js.map": "/weather-app-respnight/static/js/main.5e30fa9a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b6e5bd0.css",
+    "static/js/main.5e30fa9a.js"
+  ]
+}
